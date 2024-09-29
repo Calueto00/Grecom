@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Grecom</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body{
+            font-family: Poppins;
+        }
+    </style>
+</head>
+<body class="relative ">
+    <header class="shadow-md">
+        <nav class="max-w-5xl mx-auto lg:flex lg:items-center lg:justify-between lg:sticky lg:py-2">
+            <div class="flex items-center justify-between px-2 lg:px-0 px-4 w-full
+            lg:border-none border lg:sticky fixed z-20 bg-white left-0 right-0 lg:py-0 py-2">
+                <a href="#" >
+                    <img src="images/logo-removebg-preview.png" class=" lg:h-[80px] lg:w-[180px] w-[180px] h-[70px] object-cover" alt="">
+                </a>
+                <ion-icon class="lg:hidden text-3xl border-emerald-400 border-2
+                rounded-full p-1 hover:scale-110 transition delay-150 duration-300 ease-in cursor-pointer" name="menu" onclick="menu(this)"></ion-icon>
+            </div>
+            <ul class="lg:flex lg:flex-row lg:items-center lg:space-x-6 lg:block hidden text-xl list lg:sticky flex flex-col justify-between items-center
+             fixed z-20 bg-white left-0 right-0 top-[16%] lg:top-0 py-2 lg:py-0 lg:h-0 h-[200px] lg:px-0 px-2">
+                <li class="hover:scale-110 transition delay-150 duration-300 ease-in-out hover:font-bold hover:lg:border-none hover:border-b-2 border-emerald-400 w-full text-center hover:lg:pb-0 hover:pb-2"><a href="#">Inicio</a></li>
+                <li class="hover:scale-110 transition delay-150 duration-300 ease-in-out hover:font-bold hover:lg:border-none hover:border-b-2 border-emerald-400 w-full text-center hover:lg:pb-0 hover:pb-2"><a href="#">Sobre</a></li>
+                <li class="hover:scale-110 transition delay-150 duration-300 ease-in-out hover:font-bold hover:lg:border-none hover:border-b-2 border-emerald-400 w-full text-center hover:lg:pb-0 hover:pb-2"><a href="#">Serviços</a></li>
+                <li class="bg-emerald-300 lg:py-3 lg:px-6 lg:rounded-full border-none shadow-md w-full text-center py-2"><a href="#">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--heroe section-->
+    <div class="bg-[url('images/banner.jpg')] bg-center bg-cover bg-no-repeat lg:h-[553px] h-[80vh] relative">
+        <div class="bg-black opacity-[70%] absolute inset-0 z-[0]"></div>
+        <div class=" absolute inset-0 z-[1] px-2 lg:px-0">
+            <div class="max-w-5xl mx-auto h-full lg:flex lg:flex-col lg:items-center 
+            items-center flex flex-col justify-center lg:justify-center space-y-6">
+                <h1 class="lg:text-4xl text-3xl text-center font-bold text-white lg:w-1/2 w-[80%]"> <span class="text-emerald-400">GRECOM</span> <br class="lg:hidden"> CUIDANDO DE QUEM VOCÊ AMA</h1>
+                <p class="text-white lg:text-2xl text-sm lg:w-[70%] w-[90%] text-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.
+                </p>
+                <div class=" space-x-6">
+                    <button class=" px-7 py-3 rounded-md bg-white shadow-md">Serviços</button>
+                    <button class=" px-7 py-3 rounded-md bg-emerald-400 shadow-md">Contactar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--ends over here-->
+
+    <!--section aboute-->
+        <section class="h-[100vh]">
+           <div class="max-w-5xl mx-auto lg:flex lg:items-center lg:justify-center flex items-center justify-center h-full space-x-4 px-4 lg:px-4">
+                <div class=" lg:w-1/2 h-1/2 space-y-6 w-1/2">
+                    <h2 class="lg:text-3xl text-2xl font-bold">Sobre Nós</h2>
+                    <p class="text-wrap lg:text-xl text-sm pb-6">
+                        Somos uma empresa 100% angolana,
+                        especializada na prestação de serviços de
+                        empregadas domésticas, babás e
+                        cuidadoras de idosos, comprometida em
+                        oferecer soluções confiáveis e
+                        personalizadas para o bem-estar das
+                        famílias.
+
+                    </p>
+                    <div class="">
+                        <a href="#" class="bg-emerald-400 lg:px-6 lg:py-3 px-4 py-2 rounded-xl">
+                            Lear Mais...
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 w-1/2 lg:h-[70%] h-[60%] relative">
+                    <div class="absolute lg:w-[90%] lg:h-[90%] top-10 right-0 bg-emerald-200 z-[0] rounded-xl hidden lg:block">1</div>
+                    <div class="absolute lg:w-[90%] lg:h-[90%] h-full w-full bg-[url('images/banner.jpg')] bg-cover bg-no-repeat bg-center 
+                    top-0 left-0 bg-red-600 z-[1] rounded-xl ">
+                    </div>
+                </div>
+           </div>
+        </section>
+    <!--aboute ends here-->
+        
+    <!--section service-->
+    <section class="lg:h-[100vh] bg-slate-50">
+        <div class="lg:max-w-5xl mx-auto flex items-center justify-center h-full">
+            <div class="space-y-4 w-full h-[90%] lg:px-0 px-4">
+                <h2 class="lg:text-3xl text-xl  font-bold">Nossos Serviços</h2>
+                <div class="lg:grid lg:grid-cols-3 grid grid-cols-2 gap-4 lg:h-[80%] h-[700px]">
+                    <div class="lg:w-full lg:h-full h-[330px] rounded-xl bg-white shadow lg:space-y-6 space-y-2 p-2">
+                       <div class="bg-[url('images/domestica_1.jpg')] bg-center bg-no-repeat bg-cover lg:h-[60%] h-1/2 rounded-t-xl"></div>
+                        <div class=" lg:pb-6">
+                            <h3 class=" lg:text-xl font-bold">Doméstica</h3>
+                           <p class="lg:text-sm text-xs text-wrap mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Commodi, doloribus minima a repellat distinctio nisi.
+                            </p>
+                            <buttun class="border lg:px-7 lg:py-3 px-4 py-2 bg-emerald-400 rounded-xl cursor-pointer" 
+                            onclick="buttonDomestica()">Requisitar</buttun>
+                        </div>
+                        
+                    </div>
+                    <div class="lg:w-full lg:h-full h-[330px] rounded-xl border-none bg-white shadow lg:space-y-6 space-y-2 p-2">
+                        <div class="bg-[url('images/babá_1.jpg')] bg-center bg-no-repeat bg-cover lg:h-[60%] h-1/2 rounded-t-xl"></div>
+                         <div class=" pb-6">
+                             <h3 class="font-bold lg:text-xl">Babá</h3>
+                             <p class="lg:text-sm text-xs text-wrap mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Commodi, doloribus minima a repellat distinctio nisi.
+                            </p>
+                            <buttun type="button" class="border cursor-pointer lg:px-7 lg:py-3 px-4 py-2 bg-emerald-400 rounded-xl 
+                            hover:scale-150 delay-150 duration-300 transition ease-in-out"
+                             onclick="babaModalButton()" >Requisitar</buttun>
+                         </div>
+                         
+                     </div>
+                     <div class="w-full lg:h-full h-[330px] border rounded-xl border-none bg-white shadow lg:space-y-6 space-y-2 p-2">
+                        <div class="bg-[url('images/cuidadora_1.jpg')] bg-center bg-no-repeat bg-cover lg:h-[60%] h-1/2 rounded-t-xl"></div>
+                         <div class=" pb-6">
+                             <h3 class="font-bold lg:text-xl">Cuidadora de Idosos</h3>
+                             <p class="lg:text-sm text-xs text-wrap mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Commodi, doloribus minima a repellat distinctio nisi.
+                            </p>
+                            <buttun class="border lg:px-7 lg:py-3 px-4 py-2 bg-emerald-400 rounded-xl cursor-pointer" type="submit" onclick="idosoModalButton()">Requisitar</buttun>
+                         </div>
+                         
+                     </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--ends service over here-->
+
+    <!--diferentes-->
+        <section class="lg:h-[390px] h-[300px] relative">
+            <!--slider start over here-->
+            <div class="item w-full h-full bg-[url('images/banner.jpg')] bg-no-repeat bg-cover bg-center absolute z-10">
+                <div class="bg-black w-full h-full opacity-[70%] absolute z-0"></div>
+                <div class=" absolute z-[1] w-full top-0 bottom-0">
+                    <div class="max-w-5xl mx-auto h-full flex flex-col justify-center items-center lg:space-y-6 md:space-y-4 sm:space-y-3 space-y-2">
+                        <h2 class="lg:text-3xl md:text-2xl text-xl font-bold text-emerald-300">Oque nos torna diferentes?</h2>
+                        <p class="text-center lg:text-xl md:text-md text-xs text-white p-2">Nossa missão é proporcionar
+                            tranquilidade, conforto e
+                            segurança para nossos
+                            clientes, garantindo que suas
+                            necessidades sejam atendidas
+                            com profissionalismo e
+                            dedicação
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item w-full h-full bg-[url('images/banner.jpg')] bg-no-repeat bg-cover bg-center absolute">
+                <div class="bg-black w-full h-full opacity-[70%] absolute z-0"></div>
+                <div class=" absolute z-[1] w-full top-0 bottom-0">
+                    <div class="max-w-5xl mx-auto h-full flex flex-col justify-center items-center lg:space-y-6 md:space-y-4 sm:space-y-3 space-y-2">
+                        <h2 class="lg:text-3xl md:text-2xl text-xl font-bold text-emerald-300">Seleção Cuidadosa</h2>
+                        <p class="text-center lg:text-xl md:text-md text-xs text-white p-2">
+                            Realizamos um processo de seleção rigoroso para garantir que apenas profissionais de confiança e com histórico
+                        comprovado sejam contratados
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item w-full h-full bg-[url('images/banner.jpg')] bg-no-repeat bg-cover bg-center absolute">
+                <div class="bg-black w-full h-full opacity-[70%] absolute z-0"></div>
+                <div class=" absolute z-[1] w-full top-0 bottom-0">
+                    <div class="max-w-5xl mx-auto h-full flex flex-col justify-center items-center lg:space-y-6 md:space-y-4 sm:space-y-3 space-y-2">
+                        <h2 class="lg:text-3xl md:text-2xl text-xl font-bold text-emerald-300">Treinamento e Orientação</h2>
+                        <p class="text-center lg:text-xl md:text-md text-xs text-white p-2">
+                            Fornecemos treinamento contínuo aos nossos funcionários sobre ética, responsabilidade e a
+                            importância de manter a confidencialidade e a segurança dos bens dos
+                            clientes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item w-full h-full bg-[url('images/banner.jpg')] bg-no-repeat bg-cover bg-center absolute">
+                <div class="bg-black w-full h-full opacity-[70%] absolute z-0"></div>
+                <div class=" absolute z-[1] w-full top-0 bottom-0">
+                    <div class="max-w-5xl mx-auto h-full flex flex-col justify-center items-center lg:space-y-6 md:space-y-4 sm:space-y-3 space-y-2">
+                        <h2 class="lg:text-3xl md:text-2xl text-xl font-bold text-emerald-300">Monitoramento e Avaliação</h2>
+                        <p class="text-center lg:text-xl md:text-md text-xs text-white p-2">
+                            implementamos práticas de monitoramento e avaliação regulares para garantir que 
+                                nossos serviços atendam aos mais altos padrões de segurança e eficiência.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item w-full h-full bg-[url('images/banner.jpg')] bg-no-repeat bg-cover bg-center absolute">
+                <div class="bg-black w-full h-full opacity-[70%] absolute z-0"></div>
+                <div class=" absolute z-[1] w-full top-0 bottom-0">
+                    <div class="max-w-5xl mx-auto h-full flex flex-col justify-center items-center lg:space-y-6 md:space-y-4 sm:space-y-3 space-y-2">
+                        <h2 class="lg:text-3xl md:text-2xl text-xl font-bold text-emerald-300">Política de Responsabilidade</h2>
+                        <p class="text-center lg:text-xl md:text-md text-xs text-white p-2">
+                            Nos responsabiliza por qualquer situação de roubo ou perda que possa ocorrer durante a
+                            prestação de nossos serviços. Temos políticas claras para lidar com essas situações,
+                            garantindo que os clientes não sejam prejudicados.
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--ends over here-->
+
+            <div class="absolute z-20 lg:w-[90%] lg:flex lg:justify-between lg:left-[5%] lg:top-[20%] flex justify-around bottom-10 left-[25%] w-1/2">
+                <button class="prev lg:text-5xl text-2xl text-white hover:scale-110 duration-300 delay-150 transition ease-in-out hover:text-emerald-300" type="button">
+                    <ion-icon name="chevron-back">.</ion-icon>
+                </button>
+                <button class="next lg:text-5xl text-2xl text-white hover:scale-110 duration-300
+                delay-150 transition ease-in-out hover:text-emerald-300" type="button">
+                    <ion-icon name="chevron-forward">.</ion-icon>
+                </button>
+            </div>
+        </section>
+    <!--ends over here-->
+
+    <!--baba modal-->
+    <section class=" fixed z-30 inset-0 modalBaba hidden">
+        <div class="max-w-5xl mx-auto h-full">
+            <div class="h-[98%] border w-full shadow bg-white">
+                <div class="shadow flex items-center justify-center">
+                    <div class="bg-[url('images/logo.jpg')] bg-contain bg-no-repeat bg-center h-[120px] w-[150px]"></div>
+                    <div class="">
+                        <a href="centralgrecom@gmail.com">
+                            <ion-icon class="text-emerald-300" name="mail"></ion-icon>
+                            <span class="text-sm">centralgrecom@gmail.com</span>
+                        </a>
+                        <div>
+                            <ion-icon class="text-emerald-300" name="call"></ion-icon>
+                            <span class="text-sm">+244 923 150 160</span>
+                        </div>
+                        <div>
+                            <ion-icon class="text-emerald-300" name="location"></ion-icon>
+                            <span class="text-sm">Kilamba, ED, G13, PORTA 43, NIF 5001899015</span>
+                        </div>
+                        <h3 class="font-bold text-sm">GRECOM-Comércio Geral & Prestação de Serviços LDA</h3>
+                    </div>
+                </div>
+                <form action="#" class="w-full h-[80%] relative p-2 bg-slate-50">
+                   <div class="max-w-2xl mx-auto border h-full bg-white p-4 space-y-2">
+                        <div>
+                            <h1>Nome</h1>
+                            <input type="text" class="w-full p-1 border rounded-lg outline-none" placeholder="Digite seu nome...">
+                        </div>
+                        <div>
+                            <h1>Telefone</h1>
+                            <input type="number" class="w-full p-1 border rounded-lg outline-none" placeholder="Digite seu número...">
+                        </div>
+                        <div>
+                            <h1>Localização</h1>
+                            <input type="text" class="w-full p-1 border rounded-lg outline-none" placeholder="Digite sua localização...">
+                        </div>
+
+                        <h2 class="font-bold py-2">Informações da Babá</h2>
+                        <div>
+                            <h1>Faixa étaria da(s) criança(s)</h1>
+                            <input type="text" class="w-full p-1 border rounded-lg outline-none" placeholder="Digite faixa étaria...">
+                        </div>
+                        <div>
+                            <h1>Quantas vezes na semana e quantas horas por dia pretende o serviço?</h1>
+                            <input type="text" class="w-full p-1 border rounded-lg outline-none" placeholder="Digite dias de semana e horas...">
+                        </div>
+                        <div>
+                            <h1>Tipo de babá que procura:</h1>
+                            <select name="baba" id="selectbaba" class="outline-none w-1/2 border p-1 shadow" title=".">
+                                <option value="">Babá Interna</option>
+                                <option value="">Babá Externa</option>
+                                <option value="">Babá de fim de semana</option>
+                            </select>
+                        </div>
+                   </div>
+                    <button class="px-6 py-2 rounded-lg shadow bg-emerald-400 absolute bottom-2 right-2 flex gap-2">
+                        <ion-icon class="text-2xl" name="logo-whatsapp"></ion-icon>
+                        <span>Enviar</span>
+                    </button>
+                </form>
+            </div>
+
+            <button class="absolute top-1 right-1 closeModal" type="button">
+                <ion-icon class="text-5xl text-red-400" name="close">.</ion-icon>
+            </button>
+        </div>
+    </section>
+    <!--ends over here-->
+
+     <!--domestica modal-->
+     <section class=" fixed z-30 inset-0 modalDomestica hidden">
+        <div class="max-w-5xl mx-auto h-full">
+            <div class="h-[98%] border w-full shadow bg-white">
+                <div class="shadow flex items-center justify-center">
+                    <div class="bg-[url('images/logo.jpg')] bg-contain bg-no-repeat bg-center h-[120px] w-[150px]"></div>
+                    <div class="">
+                        <a href="centralgrecom@gmail.com">
+                            <ion-icon class="text-emerald-300" name="mail"></ion-icon>
+                            <span class="text-sm">centralgrecom@gmail.com</span>
+                        </a>
+                        <div>
+                            <ion-icon class="text-emerald-300" name="call"></ion-icon>
+                            <span class="text-sm">+244 923 150 160</span>
+                        </div>
+                        <div>
+                            <ion-icon class="text-emerald-300" name="location"></ion-icon>
+                            <span class="text-sm">Kilamba, ED, G13, PORTA 43, NIF 5001899015</span>
+                        </div>
+                        <h3 class="font-bold text-sm">GRECOM-Comércio Geral & Prestação de Serviços LDA</h3>
+                    </div>
+                </div>
+                <form action="#" class="w-full h-[80%] relative p-2 bg-slate-50">
+                    <div class="max-w-2xl mx-auto border h-full bg-white p-4 space-y-2">
+                        <div>
+                            <h1>Nome</h1>
+                            <input type="text" class="w-full p-1 border rounded-lg outline-none shadow" placeholder="Digite seu nome...">
+                        </div>
+                        <div>
+                            <h1>Telefone</h1>
+                            <input type="number" class="w-full p-1 border rounded-lg outline-none shadow" placeholder="Digite seu número...">
+                        </div>
+                        <div>
+                            <h1>Localização</h1>
+                            <input type="text" class="w-full p-1 border rounded-lg outline-none shadow" placeholder="Digite sua localização...">
+                        </div>
+
+                        <h2 class="font-bold py-2">Informações da Doméstica</h2>
+                       
+                        <div>
+                            <h1>Quantas vezes na semana e quantas horas por dia pretende o serviço?</h1>
+                            <input type="text" class="w-full p-1 border rounded-lg outline-none shadow" placeholder="Digite dias de semana e horas...">
+                        </div>
+                        
+                        <div>
+                            <h1 class="font-bold">Tipo de serviço que procura:</h1>
+                            <select name="baba" id="selectbaba" class="outline-none w-1/2 border p-1 shadow" title=".">
+                                <option value="">Emprega doméstica interna</option>
+                                <option value="">Empregada doméstica externa</option>
+                                <option value="">Empregada doméstica de fim de semana</option>
+                            </select>
+                        </div>
+                        <div>
+                            <h1 class="font-bold">Tarefas principais que deseja:</h1>
+                            <select name="baba" id="selectbaba" class="outline-none w-1/2 border p-1 shadow" title=".">
+                                <option value="">Limpeza geral</option>
+                                <option value="">Lavanderia e passar roupa</option>
+                                <option value="">Cozinhar</option>
+                                <option value="">Cuidar de crianças</option>
+                            </select>
+                        </div>
+                   </div>
+                    <button class="px-6 py-2 rounded-lg shadow bg-emerald-400 absolute bottom-2 right-2 flex gap-2">
+                        <ion-icon class="text-2xl" name="logo-whatsapp"></ion-icon>
+                        <span>Enviar</span>
+                    </button>
+                </form>
+            </div>
+
+            <button class="absolute top-1 right-1" type="button" onclick="closeModalDomestica()">
+                <ion-icon class="text-5xl text-red-400" name="close">.</ion-icon>
+            </button>
+        </div>
+    </section>
+    <!--ends over here-->
+
+     <!--cuidadora de idosos modal-->
+     <section class=" fixed z-30 inset-0 modalIdoso hidden">
+        <div class="max-w-5xl mx-auto h-full">
+            <div class="h-[98%] border w-full shadow bg-white">
+                <div class="shadow flex items-center justify-center">
+                    <div class="bg-[url('images/logo.jpg')] bg-contain bg-no-repeat bg-center h-[120px] w-[150px]"></div>
+                    <div class="">
+                        <a href="centralgrecom@gmail.com">
+                            <ion-icon class="text-emerald-300" name="mail"></ion-icon>
+                            <span class="text-sm">centralgrecom@gmail.com</span>
+                        </a>
+                        <div>
+                            <ion-icon class="text-emerald-300" name="call"></ion-icon>
+                            <span class="text-sm">+244 923 150 160</span>
+                        </div>
+                        <div>
+                            <ion-icon class="text-emerald-300" name="location"></ion-icon>
+                            <span class="text-sm">Kilamba, ED, G13, PORTA 43, NIF 5001899015</span>
+                        </div>
+                        <h3 class="font-bold text-sm">GRECOM-Comércio Geral & Prestação de Serviços LDA</h3>
+                    </div>
+                </div>
+                <form action="#" class="w-full h-[80%] relative p-2 bg-slate-50 formIdoso" >
+                    <div class="max-w-2xl mx-auto border h-full bg-white p-4 space-y-2">
+                        <div>
+                            <h1>Nome</h1>
+                            <input type="text" id="nameIdoso" class="w-full p-1 border rounded-lg outline-none shadow" placeholder="Digite seu nome...">
+                        </div>
+                        <div>
+                            <h1>Telefone</h1>
+                            <input type="number" id="telefoneIdoso" class="w-full p-1 border rounded-lg outline-none shadow" placeholder="Digite seu número...">
+                        </div>
+                        <div>
+                            <h1>Localização</h1>
+                            <input type="text" id="locationIdoso" class="w-full p-1 border rounded-lg outline-none shadow" placeholder="Digite sua localização...">
+                        </div>
+
+                        <h2 class="font-bold py-2">Informações sobre o idoso:</h2>
+                       
+                        <div>
+                            <h1>Quantas vezes na semana e quantas horas por dia pretende o serviço?</h1>
+                            <input type="text" id="semanaIdoso" class="w-full p-1 border rounded-lg outline-none shadow" placeholder="Digite dias de semana e horas...">
+                        </div>
+                        
+                        <div>
+                            <h1 class="font-bold">Tipo de serviço que procura:</h1>
+                            <select name="baba" id="serviceIdoso" class="outline-none w-1/2 border p-1 shadow" title=".">
+                                <option value="Cuidadora interna">Cuidadora interna</option>
+                                <option value="Cuidadora externa">Cuidadora externa</option>
+                                <option value="Cuidadora de fim de semana">Cuidadora de fim de semana</option>
+                            </select>
+                        </div>
+                        <div>
+                            <h1 class="font-bold">Necessidades específicas do Idoso:</h1>
+                            <select name="baba" id="needIdoso" class="outline-none w-1/2 border p-1 shadow" title=".">
+                                <option value="Administração de medicamentos">Administração de medicamentos</option>
+                                <option value="Assistência com mobilidade">Assistência com mobilidade</option>
+                                <option value="Cuidados básicos(higiene,alimentação)">Cuidados básicos(higiene,alimentação)</option>
+                            </select>
+                        </div>
+                   </div>
+                    <button class="px-6 py-2 rounded-lg shadow bg-emerald-400 absolute bottom-2 right-2 flex gap-2" onclick="EnviarIdosoWhatsapp()">
+                        <ion-icon class="text-2xl" name="logo-whatsapp"></ion-icon>
+                        <span>Enviar</span>
+                    </button>
+                </form>
+            </div>
+
+            <button class="absolute top-1 right-1" type="button" onclick="closeModalIdoso()">
+                <ion-icon class="text-5xl text-red-400" name="close">.</ion-icon>
+            </button>
+        </div>
+    </section>
+    <!--ends over here-->
+
+
+    <!--contact form-->
+    <section class="lg:h-[100vh] h-screen bg-slate-50">
+        <div class="max-w-5xl mx-auto flex flex-col items-center justify-center h-full space-y-6">
+            <h3 class="lg:text-4xl text-2xl font-bold">Contacta-nos</h3>
+            <form action="https://formsubmit.co/centralgrecom@gmail.com" method="post" class=" h-[65%] lg:w-1/2 w-[80%] space-y-4 shadow p-4 rounded-xl bg-white">
+                <div class=" w-full">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" placeholder="Digite seu nome..." class=" p-2 w-full border">
+                </div>
+                <div class=" w-full">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Digite seu email..." class=" p-2  w-full border">
+                </div>
+                <div class=" w-full">
+                    <label for="mensagem">Mensagem:</label>
+                   <textarea class="p-2 w-full border h-[120px]" name="mensagem" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+                </div>
+                <button type="submit" class="bg-emerald-400 px-7 py-3 rounded-xl text-start transition delay-150 duration-300 hover:scale-110 ease-in-out">Enviar</button>
+            </form>
+    </div>
+    </section>
+    <!--ends over here-->
+    <footer class="bg-zinc-900 text-center text-white py-4">
+        <span>All rights reserved @</span>
+    </footer>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
