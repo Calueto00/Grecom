@@ -95,4 +95,63 @@ function EnviarIdosoWhatsapp(){
    needs.value = '';
    services.value = '';
 }
+
+function sendBaba(){
+
+    let number = "+943888355";
+    const service = 'Babá';
+
+    let name = document.querySelector('#nameBaba').value;
+    let phone = document.querySelector('#telefoneBaba').value;
+    let location = document.querySelector('#locationBaba').value;
+    let idade = document.querySelector('#idadeBaba').value;
+    let semana = document.querySelector('#semanaBaba').value;
+    let select = document.querySelector('#selectbaba').value;
+
+    let url = "https://wa.me/"+ number + "?text="+ "Serviço : "+ service +"%0a" 
+    + "name :" + name.value + "%0a" 
+     + "localização :" + location.value + "%0a"
+     + "Telefone : " + phone.value + "%0a"
+     + "dias e horas de serviço : " + semana.value + "%0a"
+     + "Faixa étaria das crianças: " + idade.value + "%0a"
+     + "Tipo de serviço: " + select.value + "%0a";
+
+    window.open(url,'_blank').focus();
+
+    name.value = '';
+    phone.value='';
+    location.value = '';
+    semana.value = '';
+    idade.value = '';
+    select.value = '';
+}
+function sendDomestica(){
+
+    let number = "+943888355";
+    const service = 'Doméstica';
+
+    let name = document.querySelector('#nameDomestica').value;
+    let phone = document.querySelector('#telefoneDomestica').value;
+    let location = document.querySelector('#locationDomestica').value;
+    let serviceDomestica = document.querySelector('#serviceDomestica').value;
+    let semana = document.querySelector('#semanaDomestica').value;
+    let tarefa = document.querySelector('#tarefaDomestica').value;
+
+    let url = "https://wa.me/"+ number + "?text="+ "Serviço : "+ service +"%0a" 
+    + "name :" + name.value + "%0a" 
+     + "localização :" + location.value + "%0a"
+     + "Telefone : " + phone.value + "%0a"
+     + "dias e horas de serviço : " + semana.value + "%0a"
+     + "Tipo de serviço : " + serviceDomestica.value + "%0a"
+     + "Tarefa de Domestica: " + tarefa.value + "%0a";
+    
+    window.open(url,'_blank').focus();
+
+    name.value = '';
+    phone.value='';
+    location.value = '';
+    semana.value = '';
+    tarefa.value = '';
+    serviceDomestica.value = '';
+}
 //! ends over here

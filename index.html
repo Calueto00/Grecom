@@ -249,36 +249,36 @@
                    <div class="max-w-2xl mx-auto border h-full bg-white p-4 space-y-2">
                         <div>
                             <h1>Nome</h1>
-                            <input type="text" class="w-full p-1 border rounded-lg outline-none" placeholder="Digite seu nome...">
+                            <input type="text" id="babaName" class="w-full p-1 border rounded-lg outline-none" placeholder="Digite seu nome...">
                         </div>
                         <div>
                             <h1>Telefone</h1>
-                            <input type="number" class="w-full p-1 border rounded-lg outline-none" placeholder="Digite seu número...">
+                            <input type="number" id="telefoneBaba" class="w-full p-1 border rounded-lg outline-none" placeholder="Digite seu número...">
                         </div>
                         <div>
                             <h1>Localização</h1>
-                            <input type="text" class="w-full p-1 border rounded-lg outline-none" placeholder="Digite sua localização...">
+                            <input type="text" id="locationBaba" class="w-full p-1 border rounded-lg outline-none" placeholder="Digite sua localização...">
                         </div>
 
                         <h2 class="font-bold py-2">Informações da Babá</h2>
                         <div>
                             <h1>Faixa étaria da(s) criança(s)</h1>
-                            <input type="text" class="w-full p-1 border rounded-lg outline-none" placeholder="Digite faixa étaria...">
+                            <input type="text" id="idadeBaba" class="w-full p-1 border rounded-lg outline-none" placeholder="Digite faixa étaria...">
                         </div>
                         <div>
                             <h1>Quantas vezes na semana e quantas horas por dia pretende o serviço?</h1>
-                            <input type="text" class="w-full p-1 border rounded-lg outline-none" placeholder="Digite dias de semana e horas...">
+                            <input type="text" id="semanaBaba" class="w-full p-1 border rounded-lg outline-none" placeholder="Digite dias de semana e horas...">
                         </div>
                         <div>
                             <h1>Tipo de babá que procura:</h1>
                             <select name="baba" id="selectbaba" class="outline-none w-1/2 border p-1 shadow" title=".">
-                                <option value="">Babá Interna</option>
-                                <option value="">Babá Externa</option>
-                                <option value="">Babá de fim de semana</option>
+                                <option value="Babá Interna">Babá Interna</option>
+                                <option value="Babá Externa">Babá Externa</option>
+                                <option value="Babá de fim de semana">Babá de fim de semana</option>
                             </select>
                         </div>
                    </div>
-                    <button class="px-6 py-2 rounded-lg shadow bg-emerald-400 absolute bottom-2 right-2 flex gap-2">
+                    <button type="submit" onclick="sendBaba()" class="px-6 py-2 rounded-lg shadow bg-emerald-400 absolute bottom-2 right-2 flex gap-2">
                         <ion-icon class="text-2xl" name="logo-whatsapp"></ion-icon>
                         <span>Enviar</span>
                     </button>
@@ -318,27 +318,27 @@
                     <div class="max-w-2xl mx-auto border h-full bg-white p-4 space-y-2">
                         <div>
                             <h1>Nome</h1>
-                            <input type="text" class="w-full p-1 border rounded-lg outline-none shadow" placeholder="Digite seu nome...">
+                            <input type="text" id="nameDomestica" class="w-full p-1 border rounded-lg outline-none shadow" placeholder="Digite seu nome...">
                         </div>
                         <div>
                             <h1>Telefone</h1>
-                            <input type="number" class="w-full p-1 border rounded-lg outline-none shadow" placeholder="Digite seu número...">
+                            <input type="number" id="telefoneDomestica" class="w-full p-1 border rounded-lg outline-none shadow" placeholder="Digite seu número...">
                         </div>
                         <div>
                             <h1>Localização</h1>
-                            <input type="text" class="w-full p-1 border rounded-lg outline-none shadow" placeholder="Digite sua localização...">
+                            <input type="text" id="locationDomestica" class="w-full p-1 border rounded-lg outline-none shadow" placeholder="Digite sua localização...">
                         </div>
 
                         <h2 class="font-bold py-2">Informações da Doméstica</h2>
                        
                         <div>
                             <h1>Quantas vezes na semana e quantas horas por dia pretende o serviço?</h1>
-                            <input type="text" class="w-full p-1 border rounded-lg outline-none shadow" placeholder="Digite dias de semana e horas...">
+                            <input type="text" id="semanaDomestica" class="w-full p-1 border rounded-lg outline-none shadow" placeholder="Digite dias de semana e horas...">
                         </div>
                         
                         <div>
                             <h1 class="font-bold">Tipo de serviço que procura:</h1>
-                            <select name="baba" id="selectbaba" class="outline-none w-1/2 border p-1 shadow" title=".">
+                            <select name="baba" id="serviceDomestica" class="outline-none w-1/2 border p-1 shadow" title=".">
                                 <option value="">Emprega doméstica interna</option>
                                 <option value="">Empregada doméstica externa</option>
                                 <option value="">Empregada doméstica de fim de semana</option>
@@ -346,7 +346,7 @@
                         </div>
                         <div>
                             <h1 class="font-bold">Tarefas principais que deseja:</h1>
-                            <select name="baba" id="selectbaba" class="outline-none w-1/2 border p-1 shadow" title=".">
+                            <select name="baba" id="tarefaDomestica" class="outline-none w-1/2 border p-1 shadow" title=".">
                                 <option value="">Limpeza geral</option>
                                 <option value="">Lavanderia e passar roupa</option>
                                 <option value="">Cozinhar</option>
@@ -354,7 +354,7 @@
                             </select>
                         </div>
                    </div>
-                    <button class="px-6 py-2 rounded-lg shadow bg-emerald-400 absolute bottom-2 right-2 flex gap-2">
+                    <button type="submit" onclick="sendDomestica()" class="px-6 py-2 rounded-lg shadow bg-emerald-400 absolute bottom-2 right-2 flex gap-2">
                         <ion-icon class="text-2xl" name="logo-whatsapp"></ion-icon>
                         <span>Enviar</span>
                     </button>
