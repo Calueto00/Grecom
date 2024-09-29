@@ -68,7 +68,7 @@ function babaModalButton(){
 //*functions to send data do whatsapp
 
 function EnviarIdosoWhatsapp(){
-    let number = "+ 943888355";
+    let number = "+244943888355";
     const service = 'Cuidadora de Idosos';
 
     let name = document.querySelector('#nameIdoso');
@@ -96,20 +96,20 @@ function EnviarIdosoWhatsapp(){
    services.value = '';
 }
 
-function sendBaba(){
+function EnviarWhatsappBaba(){
 
-    let number = "+ 943888355";
+    const number = "+244943888355";
     const service = 'Babá';
 
-    let name = document.querySelector('#nameBaba').value;
-    let phone = document.querySelector('#telefoneBaba').value;
-    let location = document.querySelector('#locationBaba').value;
-    let idade = document.querySelector('#idadeBaba').value;
-    let semana = document.querySelector('#semanaBaba').value;
-    let select = document.querySelector('#selectbaba').value;
+    let name = document.querySelector('#babaName');
+    let phone = document.querySelector('#telefoneBaba');
+    let location = document.querySelector('#locationBaba');
+    let idade = document.querySelector('#idadeBaba');
+    let semana = document.querySelector('#semanaBaba');
+    let select = document.querySelector('#selectbaba');
 
     let url = "https://wa.me/"+ number + "?text="+ "Serviço : "+ service +"%0a" 
-    + "name :" + name.value + "%0a" 
+     + "name :" + name.value + "%0a" 
      + "localização :" + location.value + "%0a"
      + "Telefone : " + phone.value + "%0a"
      + "dias e horas de serviço : " + semana.value + "%0a"
@@ -125,9 +125,10 @@ function sendBaba(){
     idade.value = '';
     select.value = '';
 }
+
 function sendDomestica(){
 
-    let number = "+ 943888355";
+    let number = "+244943888355";
     const service = 'Doméstica';
 
     let name = document.querySelector('#nameDomestica').value;
