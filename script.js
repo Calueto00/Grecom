@@ -68,7 +68,7 @@ function babaModalButton(){
 //*functions to send data do whatsapp
 
 function EnviarIdosoWhatsapp(){
-    let number = "+943888355";
+    let number = "+ 943888355";
     const service = 'Cuidadora de Idosos';
 
     let name = document.querySelector('#nameIdoso');
@@ -98,7 +98,7 @@ function EnviarIdosoWhatsapp(){
 
 function sendBaba(){
 
-    let number = "+943888355";
+    let number = "+ 943888355";
     const service = 'Babá';
 
     let name = document.querySelector('#nameBaba').value;
@@ -127,7 +127,7 @@ function sendBaba(){
 }
 function sendDomestica(){
 
-    let number = "+943888355";
+    let number = "+ 943888355";
     const service = 'Doméstica';
 
     let name = document.querySelector('#nameDomestica').value;
