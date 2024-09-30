@@ -47,8 +47,8 @@
                     Confie em nossos serviços de doméstica, cuidadora de idosos e babá para garantir um lar seguro e acolhedor.
                 </p>
                 <div class=" space-x-6">
-                    <button class=" px-7 py-3 rounded-md bg-white shadow-md" id="#sectionService">Serviços</button>
-                    <button class=" px-7 py-3 rounded-md bg-emerald-400 shadow-md" id="#contact">Contactar</button>
+                    <a href="#sectionService" class=" px-7 py-3 rounded-md bg-white shadow-md" id="#sectionService">Serviços</a>
+                    <a href="#contact" class=" px-7 py-3 rounded-md bg-emerald-400 shadow-md">Contactar</a>
                 </div>
             </div>
         </div>
@@ -445,10 +445,10 @@
 
 
     <!--contact form-->
-    <section class="lg:h-[100vh] h-screen bg-slate-50" id="contact">
+    <section class="lg:h-[100vh] h-[80dvh] bg-slate-50" id="contact">
         <div class="max-w-5xl mx-auto flex flex-col items-center justify-center h-full space-y-6">
             <h3 class="lg:text-4xl text-2xl font-bold">Contacta-nos</h3>
-            <form action="https://formsubmit.co/centralgrecom@gmail.com" method="post" class=" h-[65%] lg:w-1/2 w-[80%] space-y-4 shadow p-4 rounded-xl bg-white">
+            <form action="https://formsubmit.co/centralgrecom@gmail.com" method="post" class=" lg:h-[64%] lg:w-1/2 w-[80%] space-y-4 shadow p-4 rounded-xl bg-white">
                 <div class=" w-full">
                     <label for="name">Nome:</label>
                     <input type="text" name="name" placeholder="Digite seu nome..." class=" p-2 w-full border">
@@ -459,7 +459,7 @@
                 </div>
                 <div class=" w-full">
                     <label for="mensagem">Mensagem:</label>
-                   <textarea class="p-2 w-full border h-[120px]" name="mensagem" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+                   <textarea class="p-2 w-full border lg:h-[120px] h-1/2"  name="mensagem" id="mensagem" placeholder="Digite sua mensagem"></textarea>
                 </div>
                 <button type="submit" class="bg-emerald-400 px-7 py-3 rounded-xl text-start transition delay-150 duration-300 hover:scale-110 ease-in-out">Enviar</button>
             </form>
