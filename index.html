@@ -299,23 +299,23 @@
             <div class="h-[98%] border w-full shadow bg-white">
                 <div class="shadow flex items-center justify-center">
                     <div class="bg-[url('images/logo.jpg')] bg-contain bg-no-repeat bg-center h-[120px] w-[150px]"></div>
-                    <div class="">
+                    <div class="text-xs">
                         <a href="centralgrecom@gmail.com">
                             <ion-icon class="text-emerald-300" name="mail"></ion-icon>
-                            <span class="text-sm">centralgrecom@gmail.com</span>
+                            <span class="lg:text-sm">centralgrecom@gmail.com</span>
                         </a>
-                        <div>
+                        <div class="text-xs">
                             <ion-icon class="text-emerald-300" name="call"></ion-icon>
-                            <span class="text-sm">+244 923 150 160</span>
+                            <span class="lg:text-sm">+244 923 150 160</span>
                         </div>
-                        <div>
+                        <div class="text-xs">
                             <ion-icon class="text-emerald-300" name="location"></ion-icon>
-                            <span class="text-sm">Kilamba, ED, G13, PORTA 43, NIF 5001899015</span>
+                            <span class="lg:text-sm">Kilamba, ED, G13, PORTA 43, NIF 5001899015</span>
                         </div>
-                        <h3 class="font-bold text-sm">GRECOM-Comércio Geral & Prestação de Serviços LDA</h3>
+                        <h3 class="font-bold lg:text-sm">GRECOM-Comércio Geral & Prestação de Serviços LDA</h3>
                     </div>
                 </div>
-                <form action="#" class="w-full h-[80%] relative p-2 bg-slate-50">
+                <form action="#" class="w-full h-[80%] relative p-2 bg-slate-50 lg:text-base text-sm">
                     <div class="max-w-2xl mx-auto border h-full bg-white p-4 space-y-2">
                         <div>
                             <h1>Nome</h1>
@@ -340,9 +340,9 @@
                         <div>
                             <h1 class="font-bold">Tipo de serviço que procura:</h1>
                             <select name="baba" id="serviceDomestica" class="outline-none w-1/2 border p-1 shadow" title=".">
-                                <option value="">Emprega doméstica interna</option>
-                                <option value="">Empregada doméstica externa</option>
-                                <option value="">Empregada doméstica de fim de semana</option>
+                                <option value="Empregada doméstica Interna">Empregada doméstica interna</option>
+                                <option value="Empregada doméstica externa">Empregada doméstica externa</option>
+                                <option value="Empregada de fim de semana">Empregada doméstica de fim de semana</option>
                             </select>
                         </div>
                         <div>
@@ -350,19 +350,19 @@
                             <div class="flex items-center justify-between mt-2">
                                 <label for="limpeza">
                                     <span>Limpeza geral</span>
-                                    <input type="checkbox" name="task1" id="limpeza" value="Limpeza geral" placeholder="tarefa 1">
+                                    <input type="checkbox" class="task1" id="limpeza" value="Limpeza geral" placeholder="tarefa 1">
                                 </label>
                                 <label for="lavar">
                                     <span>Lavar roupa</span>
-                                    <input type="checkbox" name="task1" id="lavar" value="Lavandaria e passar roupa" placeholder="">
+                                    <input type="checkbox" class="task1" id="lavar" value="Lavandaria e passar roupa" placeholder="">
                                 </label>
                                 <label for="cozinhar">
                                     <span>Cozinhar</span>
-                                    <input type="checkbox" name="task1" id="cpzinhar" value="Cozinhar" placeholder="">
+                                    <input type="checkbox" class="task1" id="cpzinhar" value="Cozinhar" placeholder="">
                                 </label>
                                 <label for="cuidar">
                                     <span>Cuidar de crianças</span>
-                                    <input type="checkbox" name="task1" id="cuidar" value="Cuidar de crianças" placeholder="">
+                                    <input type="checkbox" class="task1" id="cuidar" value="Cuidar de crianças" placeholder="">
                                 </label>
                             </div>
                         </div>

@@ -130,14 +130,14 @@ function sendDomestica(){
 
     let number = "+244943479631";
     const service = 'Doméstica';
-
+    let newTask = []; 
     let name = document.querySelector('#nameDomestica').value;
     let phone = document.querySelector('#telefoneDomestica').value;
     let location = document.querySelector('#locationDomestica').value;
     let serviceDomestica = document.querySelector('#serviceDomestica').value;
     let semana = document.querySelector('#semanaDomestica').value;
-    let tarefa = document.querySelectorAll('input[name="task1"]');
-    let newTask = []; 
+    let tarefa = document.querySelectorAll('.task1');
+    
         tarefa.forEach((data)=>{
             if(data.checked){
                 newTask.push(data.value);
@@ -148,11 +148,11 @@ function sendDomestica(){
      + "localização :" + location.value + "%0a"
      + "Telefone : " + phone.value + "%0a"
      + "dias e horas de serviço : " + semana.value + "%0a"
-     + "Tipo de serviço : " + serviceDomestica.value + "%0a"
-     + "Tarefa de Domestica: " + newTask.join(', ') + "%0a";
+     + "Tipo de serviço : " + serviceDomestica.value + "%0a";
+    // + "Tarefa de Domestica: " + newTask.join(', ') + "%0a";
     
    window.open(url,'_blank').focus();
-   //console.log(newTask.join());
+  
 
     name.value = '';
     phone.value='';
