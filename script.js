@@ -165,6 +165,6 @@ function sendDomestica(){
 //! ends over here
 
 function contactWhatsap(){
-    let url = "https://wa.me/" + 244943479631 + "?";
+    let url = "https://wa.me/" + 244943479631 + "?text=";
     window.open(url,'_blank').focus();
 }
