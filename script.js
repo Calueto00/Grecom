@@ -163,3 +163,8 @@ function sendDomestica(){
     serviceDomestica.value = '';
 }
 //! ends over here
+
+function contactWhatsap(){
+    let url = "https://wa.me/" + 244943479631 + "?";
+    window.open(url,'_blank').focus();
+}
