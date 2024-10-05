@@ -45,6 +45,7 @@ const closeModal = document.querySelector('.closeModal');
 
 function buttonDomestica(){
     modalDomestica.classList.remove('hidden');
+   
 }
 function closeModalDomestica(){
     modalDomestica.classList.add('hidden');
