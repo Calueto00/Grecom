@@ -143,7 +143,7 @@
                 <div class="bg-black w-full h-full opacity-[70%] absolute z-0"></div>
                 <div class=" absolute z-[1] w-full top-0 bottom-0">
                     <div class="max-w-5xl mx-auto h-full flex flex-col justify-center items-center lg:space-y-6 md:space-y-4 sm:space-y-3 space-y-2">
-                        <h2 class="lg:text-3xl md:text-2xl text-xl font-bold text-emerald-300">Oque nos torna diferentes ?</h2>
+                        <h2 class="lg:text-3xl md:text-2xl text-xl font-bold text-emerald-300">O que nos torna diferentes ?</h2>
                         <p class="text-center lg:text-xl md:text-md text-xs text-white p-2">Nossa missão é proporcionar
                             tranquilidade, conforto e
                             segurança para nossos
@@ -347,12 +347,24 @@
                         </div>
                         <div>
                             <h1 class="font-bold">Tarefas principais que deseja:</h1>
-                            <select name="baba" id="tarefaDomestica" class="outline-none w-1/2 border p-1 shadow" title=".">
-                                <option value="">Limpeza geral</option>
-                                <option value="">Lavanderia e passar roupa</option>
-                                <option value="">Cozinhar</option>
-                                <option value="">Cuidar de crianças</option>
-                            </select>
+                            <div class="flex items-center justify-between mt-2">
+                                <label for="tarefa 1">
+                                    <span>Limpeza geral</span>
+                                    <input type="checkbox" id="tarefa1" name="tarefa1" value="Limpeza geral" placeholder="tarefa 1">
+                                </label>
+                                <label for="tarefa 1">
+                                    <span>Lavar roupa</span>
+                                    <input type="checkbox" id="tarefa1" name="tarefa1" value="Lavandaria e passar roupa" placeholder="">
+                                </label>
+                                <label for="tarefa 1">
+                                    <span>Cozinhar</span>
+                                    <input type="checkbox" id="tarefa1" name="tarefa1" value="Cozinhar" placeholder="">
+                                </label>
+                                <label for="tarefa 1">
+                                    <span>Cuidar de crianças</span>
+                                    <input type="checkbox" id="tarefa1" name="tarefa1" value="Cuidar de crianças" placeholder="">
+                                </label>
+                            </div>
                         </div>
                    </div>
                     <button type="button" onclick="sendDomestica()" class="px-6 py-2 rounded-lg shadow bg-emerald-400 absolute bottom-2 right-2 flex gap-2">
