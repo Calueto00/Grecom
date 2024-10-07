@@ -153,17 +153,14 @@ function sendDomestica(){
      + "Tipo de serviço : " + serviceDomestica.value + "%0a"
      + "Tarefa de Domestica: " + newTask.join(', '); + "%0a";
     
-
-     console.log(name, phone,location);
    window.open(url,'_blank').focus();
   
-
-   /* name.value = '';
+    name.value = '';
     phone.value='';
     location.value = '';
     semana.value = '';
     tarefa.value = '';
-    serviceDomestica.value = ''; */
+    serviceDomestica.value = '';
 }
 //! ends over here
 
