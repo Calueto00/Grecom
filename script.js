@@ -131,36 +131,39 @@ function sendDomestica(){
 
     let number = "+244943479631";
     const service = 'Doméstica';
-    let newTask = []; 
-    let name = document.querySelector('#nameDomestica').value;
-    let phone = document.querySelector('#telefoneDomestica').value;
-    let location = document.querySelector('#locationDomestica').value;
-    let serviceDomestica = document.querySelector('#serviceDomestica').value;
-    let semana = document.querySelector('#semanaDomestica').value;
     let tarefa = document.querySelectorAll('.task1');
-    
+    let newTask = [];
         tarefa.forEach((data)=>{
             if(data.checked){
                 newTask.push(data.value);
             }
         });
+     
+    let name = document.querySelector('#nameDomestica');
+    let phone = document.querySelector('#telefoneDomestica');
+    let location = document.querySelector('#locationDomestica');
+    let serviceDomestica = document.querySelector('#serviceDomestica');
+    let semana = document.querySelector('#semanaDomestica');
+    
     let url = "https://wa.me/"+ number + "?text="+ "Serviço : "+ service +"%0a" 
-    + "name :" + name.value + "%0a" 
+     + "name :" + name.value + "%0a" 
      + "localização :" + location.value + "%0a"
      + "Telefone : " + phone.value + "%0a"
      + "dias e horas de serviço : " + semana.value + "%0a"
-     + "Tipo de serviço : " + serviceDomestica.value + "%0a";
-    // + "Tarefa de Domestica: " + newTask.join(', ') + "%0a";
+     + "Tipo de serviço : " + serviceDomestica.value + "%0a"
+     + "Tarefa de Domestica: " + newTask.join(', '); + "%0a";
     
+
+     console.log(name, phone,location);
    window.open(url,'_blank').focus();
   
 
-    name.value = '';
+   /* name.value = '';
     phone.value='';
     location.value = '';
     semana.value = '';
     tarefa.value = '';
-    serviceDomestica.value = '';
+    serviceDomestica.value = ''; */
 }
 //! ends over here
 
